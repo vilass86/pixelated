@@ -1,0 +1,58 @@
+/* Past Cards Container */
+.past-cards-container {
+  width: 300px;             /* Fixed width for the container */
+  max-height: 400px;        /* Limit the height to prevent it from growing */
+  overflow-y: auto;         /* Enable vertical scrolling */
+  background-color: #1e1e1e; /* Dark background */
+  border: 2px solid #ffd700; /* Yellow border */
+  border-radius: 8px;       /* Rounded corners */
+  padding: 10px;            /* Padding inside the container */
+  margin-left: 20px;        /* Space from the left side */
+  margin-top: 190px;         /* Top margin */
+  position: fixed;          /* Fix the position on the left side */
+  top: 20px;                /* Add a little gap from the top */
+  left: 20px;               /* Align to the left of the screen */
+  z-index: 10;              /* Ensure it's above other content */
+}
+
+/* Title Styling */
+.past-cards-container h3 {
+  font-size: 18px;
+  color: #ffd700;           /* Yellow color for the title */
+  text-align: center;       /* Center align title */
+  margin-bottom: 10px;      /* Space below title */
+}
+
+/* Cards List Styling */
+.cards-list {
+  display: flex;            /* Flexbox for displaying text */
+  flex-direction: column-reverse;   /* Stack text vertically */
+  gap: 10px;                /* Space between cards */
+  align-items: center;      /* Center align the text */
+}
+
+/* Individual Card Styling (Text) */
+.card-text {
+  font-size: 16px;          /* Text size for the card */
+  color: #ffd700;           /* Yellow color for the text */
+  background-color: #333;   /* Dark background for each card */
+  padding: 5px 10px;        /* Padding for the card text */
+  border-radius: 8px;       /* Rounded corners for the text box */
+  border: 2px solid #ffd700; /* Yellow border around each text card */
+  text-align: center;       /* Center the text */
+}
+
+/* Make the container responsive */
+@media (max-width: 768px) {
+  .past-cards-container {
+    width: 250px;           /* Adjust width on smaller screens */
+    max-height: 400px;      /* Adjust max-height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .past-cards-container {
+    width: 200px;           /* Adjust width further for very small screens */
+    max-height: 350px;      /* Adjust height for small screens */
+  }
+}

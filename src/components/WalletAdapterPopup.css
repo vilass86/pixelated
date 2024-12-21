@@ -1,0 +1,129 @@
+/* Modal Wrapper */
+.wallet-adapter-modal-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: rgba(30, 30, 30, 0.95); /* Slightly lighter dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.8); /* Yellow glow effect */
+  overflow: hidden;
+  width: auto;
+  max-width: 400px;
+  padding: 0;
+}
+
+/* Modal Content */
+.wallet-adapter-modal {
+  background-color: #222; /* Consistent dark theme */
+  color: #ffd700; /* Yellow text */
+  font-family: 'Press Start 2P', sans-serif;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid #ffd700;
+}
+
+/* Modal Title */
+.wallet-adapter-modal-title {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Wallet Button */
+.wallet-adapter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Full width */
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #444; /* Dark button background */
+  color: #ffd700; /* Yellow text */
+  border: 2px solid #ffd700; /* Yellow border */
+  border-radius: 8px;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  gap: 10px; /* Space between icon and text */
+}
+
+/* Hover Effect */
+.wallet-adapter-button:hover {
+  background-color: #555; /* Slightly lighter on hover */
+  transform: translateY(-2px); /* Lift on hover */
+}
+
+/* Button Icon */
+.wallet-adapter-button img {
+  width: 20px; /* Icon size */
+  height: 20px;
+  margin-right: 10px; /* Space between icon and text */
+  display: inline-block; /* Ensure alignment */
+}
+
+/* Button Text */
+.wallet-adapter-button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle; /* Align text with the icon */
+}
+
+/* Wallet List */
+.wallet-adapter-wallet-list {
+  margin-top: 20px;
+}
+
+.wallet-adapter-wallet-list-item {
+  padding: 10px;
+  border-bottom: 1px solid #ffd700;
+  display: flex;
+  align-items: center; /* Align icon and text */
+  justify-content: space-between; /* Spread items */
+}
+
+.wallet-adapter-wallet-list-item:last-child {
+  border-bottom: none;
+}
+
+/* Backdrop Overlay */
+.wallet-adapter-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+/* Scroll Prevention */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Close Button */
+.wallet-adapter-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #ffd700;
+  font-size: 16px;
+  font-family: 'Press Start 2P', sans-serif;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.wallet-adapter-modal-close:hover {
+  color: #fff; /* White on hover */
+}

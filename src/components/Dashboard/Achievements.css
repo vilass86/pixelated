@@ -1,0 +1,30 @@
+.achievements {
+  background-color: #1e1e1e;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.achievements h2 {
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievement-item {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.achievement-item strong {
+  color: #28a745;
+}

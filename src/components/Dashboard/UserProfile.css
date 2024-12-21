@@ -1,0 +1,37 @@
+.user-profile {
+  text-align: center;
+  padding: 15px;
+}
+
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #ffd700;
+}
+
+.wallet-info {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.wallet-info p {
+  font-size: 12px;
+}
+
+.copy-button {
+  background-color: #444;
+  color: #ffd700;
+  border: 1px solid #ffd700;
+  padding: 5px 10px;
+  font-size: 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+  background-color: #555;
+}

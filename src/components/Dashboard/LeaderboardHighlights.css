@@ -1,0 +1,28 @@
+.leaderboard-highlights {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .leaderboard-highlights h2 {
+    color: #ffd700;
+    margin-bottom: 10px;
+  }
+  
+  .leaderboard-highlights p {
+    margin: 5px 0;
+  }
+  
+  .leaderboard-highlights p.rank-up {
+    color: #28a745; /* Green for rank improvement */
+  }
+  
+  .leaderboard-highlights p.rank-down {
+    color: #ff4d4d; /* Red for rank drop */
+  }
+  

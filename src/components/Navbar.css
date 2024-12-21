@@ -1,0 +1,135 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and buttons */
+  align-items: center;
+  background-color: #1e1e1e; /* Dark background */
+  padding: 10px 20px;
+  border-bottom: 2px solid #ffd700; /* Yellow border */
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+/* Logo Styling */
+.navbar .logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffd700; /* Yellow text */
+  text-transform: uppercase;
+}
+
+/* Button Group */
+.navbar .button-group {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  align-items: center; /* Align buttons vertically */
+  justify-content: center; /* Center the buttons horizontally */
+}
+
+/* General Button Styling */
+.navbar button,
+.navbar .dashboard-btn,
+.wallet-adapter-button {
+  background-color: #444; /* Dark button background */
+  color: #ffd700; /* Yellow text */
+  border: 2px solid #ffd700; /* Yellow border */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px; /* Font size */
+  font-family: 'Press Start 2P', sans-serif; /* Ensure pixelated font */
+  text-align: center; /* Center text in buttons */
+  text-decoration: none; /* Remove unwanted underline */
+  display: flex;
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
+  white-space: nowrap; /* Prevent text wrapping */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+
+  /* Unified Dimensions */
+  height: 40px; /* Uniform height */
+  padding: 10px 20px; /* Consistent padding */
+  max-width: 220px; /* Prevents button from being too wide */
+  box-sizing: border-box; /* Ensure padding does not affect dimensions */
+}
+
+/* Hover Effect for Buttons */
+.navbar button:hover,
+.navbar .dashboard-btn:hover,
+.wallet-adapter-button:hover {
+  background-color: #555; /* Slightly darker on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Wallet Button Specific Styling */
+.wallet-adapter-button {
+  background-color: #28a745; /* Green button */
+  color: white; /* White text */
+  border: 2px solid #28a745; /* Green border */
+}
+
+.wallet-adapter-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.wallet-adapter-button span {
+  font-family: 'Press Start 2P', sans-serif !important; /* Pixelated font */
+  font-size: 12px;
+  text-transform: uppercase; /* Ensure consistency */
+}
+
+/* Dashboard Button Specific Styling */
+.navbar .dashboard-btn {
+  font-weight: bold; /* Bold text for the dashboard button */
+  background-color: #444; /* Same dark background for consistency */
+  color: #ffd700; /* Yellow text */
+  border: 2px solid #ffd700; /* Yellow border */
+}
+
+/* Hover Effect Consistency */
+.navbar .dashboard-btn:hover {
+  transform: translateY(-2px); /* Slight lift effect */
+  background-color: #555; /* Consistent hover color */
+}
+
+/* Info Links Styling */
+.navbar .info-links {
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  gap: 8px; /* Vertical space between links */
+  position: absolute;
+  top: 10px; /* Adjust vertical alignment */
+  left: 20px; /* Adjust horizontal alignment */
+}
+
+.navbar .info-link {
+  color: #ffd700; /* Yellow text */
+  font-size: 12px;
+  font-family: 'Press Start 2P', sans-serif;
+  cursor: pointer;
+  text-decoration: underline; /* Underline for link style */
+  transition: color 0.3s ease;
+  letter-spacing: 1px; /* Reduce spacing between letters */
+}
+
+.navbar .info-link:hover {
+  color: #fff; /* White text on hover */
+}
+
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Add space between sections */
+  }
+
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+    gap: 15px; /* Add spacing between buttons */
+  }
+
+  .wallet-adapter-button,
+  .navbar .dashboard-btn {
+    max-width: 100%; /* Expand buttons to full width on small screens */
+  }
+}
